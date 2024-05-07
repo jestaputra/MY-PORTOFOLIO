@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body{
+    color: white;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+nav h2{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+nav h2 span{
+    color: aqua;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding-bottom: 5px;
+    transition: all .5s;
+    position: relative;
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: all .7s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+header.content{
+    margin-bottom: 20px;
+}
+header.content h2{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+.ui{
+    color: aqua;
+}
+.ux{
+    color: rgb(255, 0, 255);
+}
+h1{
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+h1 span{
+    color: aqua;
+}
+.container-content{
+    width: 100%;
+    height: auto;
+    background: rgb(35, 34, 34);
+    padding: 30px 5%;
+    position: relative;
+}
+
+/* ------------------------------- ABOUT------------------------------- */
+
+#about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.image-box{
+    flex-basis: 45%;
+    margin-top: 50px;
+}
+.image-box img{
+    width: 100%;
+}
+.text-box{
+    flex-basis: 50%;
+    text-align: left;
+    margin-top: 50px;
+}
+.text-box h1{
+    font-size: 3.5em;
+    margin-left: 20px;
+    letter-spacing: 3px;
+}
+.text-box .tab-tittle{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 20px 0;
+    cursor: pointer;
+    position: relative;
+}
+.text-box .tab-tittle::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: rgb(255, 0, 255);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all .7s;
+}
+.text-box .tab-tittle:hover::after{
+    width: 100%;
+}
+.text-box .tab-tittle.active-title::after{
+    width: 50%;
+}
+.full{
+    width: 100%;
+}
+.text-box blockquote{
+    margin-left: 20px;
+    margin-top: 15px;
+} 
+.text-box p{
+    margin-left: 20px;
+    color: rgb(171, 169, 169);
+}
+.text-box blockquote{
+    margin-bottom: 0px;
+    color: rgb(255, 0, 255);
+}
+.info{
+    margin-top: 40px;
+    display: none;
+}
+.active-subtitle{
+    display: block;
+}
+
+/* --------------------------------- SERVICE ----------------------------- */
+
+#Service{
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 30px;
+    border-bottom: 1px solid rgb(67, 67, 67);
+}
+#Service h1{
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+.card-container{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+.card{
+    width: 300px;
+    background: rgb(25, 25, 25);
+    margin: 50px 40px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .7s;
+    transition: background .6s, transform .6s;
+}
+.card p{
+    color: rgb(198, 197, 197);
+}
+.card:hover{
+    background: purple;
+    transform: translateY(-10px);
+}
+.card h2{
+    font-size: 3em;
+    margin: 0;
+}
+.card p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.card button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all .5s;
+}
+.card button img{
+    width: 15px;
+}
+
+/* --------------------------------- PROJECTS --------------------------- */
+
+#projects{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    padding: 20px 30px;
+    position: relative;
+}
+#projects h1{
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+.container-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.project-card{
+    width: 350px;
+    height: 290px;
+    margin: 50px 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.project-card img{
+    width: 350px;
+    height: 290px;
+    transition: transform .5s;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+    background: linear-gradient(180deg, transparent, purple);
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    transition: heaight 1s;
+    overflow: hidden;
+    transition: height .5s;
+}
+/* .project-card:hover .layer{
+    height: 100%;
+    display: flex;
+} */
+.layer h3{
+    margin-bottom: 5px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.layer p{
+    color: #eaeaea;
+}
+.layer a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+}
+.project-card:hover img{
+    transform: scale(1.1);
+}
+.project-card:hover .layer{
+    height: 100%;
+}
+.more{
+    padding: 5px 20px;
+    font-size: 18px;
+    color: white;
+    background: transparent;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 50px;
+    background: purple;
+    border: 2px solid purple;
+    transition: all .5s;
+}
+.more:hover{
+    background: transparent;
+    color: purple;
+    border: 2px solid purple;
+}
+
+/* --------------------------- CONTACT ---------------------------------- */
+
+#contact{
+    width: 100%;
+    height: auto;
+    padding: 20px 10%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.row-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.div-1{
+    flex-basis: 35%;
+}
+.div-1 h1{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 3.5em;
+}
+.div-1 p{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.div-1 p span{
+    margin-right: 10px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-1 ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+    cursor: pointer;
+    height: auto;
+    padding: 0 4px;
+    transition: all .5s;
+}
+.div-1 ul li:hover{
+    color: rgb(198, 7, 198);
+}
+.div-1 button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    border: 3px solid aqua;
+    background: transparent;
+    color: aqua;
+    cursor: pointer;
+    outline: none;
+}
+.div-1 button a{
+    text-decoration: none;
+    color: aqua;
+}
+.div-2{
+    flex-basis: 50%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.div-2 input{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #333232;
+    color: white;
+}
+textarea{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #333232;
+    color: white;
+    font-size: 16px;
+}
+.div-2 button{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid white;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+.div-2 button i{
+    margin-left: 5px;
+}
+.alert{
+    margin-top: 10px;
+    /* display: none; */
+    align-items: center;
+}
+.alert i{
+    font-size: 25px;
+}
+.succes{
+    color: green;
+}
+.wrong{
+    color: rgb(169, 4, 4);
+}
+.copy{
+    margin-top: 80px;
+    width: 100%;
+    text-align: center;
+    color: rgb(193, 191, 191);
+    padding: 10px;
+    background: rgb(49, 48, 48);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.kotak{
+    display: none;
+}
+nav p{
+    display: none;
+}
+
+/* ---------------------- RESPONSIVE -------------------------------------- */
+
+@media only screen and (max-width: 1000px){
+    #about{
+        flex-direction: column;
+    }
+    .card h2{
+        font-size: 5em;
+    }
+    .card h3{
+        font-size: 1.5em;
+    }
+    .card p{
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .card button{
+        font-size: 18px;
+    }
+    .card{
+        width: 80%;
+    }
+    .project-card{
+        width: 100%;
+        height: 400px;
+    }
+    .project-card img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 710px){
+    header{
+        background-position: center;
+        padding: 0 0 0 10%;
+    }
+    .row-content{
+        flex-direction: column;
+    }
+    .project-card{
+        width: 500px;
+        height: 300px;
+    }
+    .project-card img{
+        width: 100%;
+        height: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    nav p{
+        font-size: 30px;
+        display: block;
+        position: absolute;
+        right: 10%;
+    }
+    .kotak{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background: rgb(37, 37, 37);
+        z-index: 999;
+        padding: 20px;
+        display: none;
+    }
+    .kotak h3{
+        color: white;
+        position: absolute;
+        right: 20px;
+        font-size: 2em;
+    }
+    .show{
+        animation: random .6s;
+        display: block;
+    }
+    @keyframes random {
+        0%{
+            right: -200px;
+        }100%{
+            right: 0;
+        }
+    }
+    .kotak ul{
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .kotak ul li{
+        list-style: none;
+        margin-top: 6px;
+    }
+    .kotak ul li a{
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+    .blurr{
+        filter: blur(4px);
+        outline: none;
+        border: none;
+    }
+    .card h2{
+        font-size: 3.2em;
+    }
+    .card h3{
+        font-size: 1.2em;
+    }
+    .card p{
+        margin-top: 10px;
+    }
+    .card button{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .container-content{
+        padding: 30px 0;
+    }
+    .card-container{
+        padding: 0;
+    }
+    .card{
+        margin: 30px 0;
+    }
+    .card h2{
+        font-size: 3.5em;
+    }
+    .card h3{
+        font-size: 1.3em;
+    }
+    .card p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .card button{
+        font-size: 15px;
+    }
+    .text-box{
+        margin-left: 0;
+        padding-left: 10px;
+    }
+    #Service{
+        padding: 30px 0;
+    }
+    #projects{
+        padding: 0;
+    }
+    .project-card{
+        width: 100%;
+    }
+    #projects h1{
+        top: -50px;
+    }
+    .container-project{
+        margin-top: 100px;
+    }
+}
+@media only screen and (max-width: 400px){
+    header{
+        padding: 0 0 0 20px;
+    }
+    #Service{
+        padding: 0 0;
+    }
+    #Service h1{
+        text-align: center;
+        top: -50px;
+    }
+    #projects h1{
+        left: 35px;
+    }
+    .card{
+        margin: 20px;
+        width: 100%;
+    }
+    header h1{
+        font-size: 2.2em;
+        margin: 20px 0;
+    }
+    #projects{
+        padding: 0;
+    }
+    #projects h1{
+        top: -100px;
+    }
+    .container-project{
+        margin-top: 150px;
+    }
+    .project-card{
+        margin: 20px 10px;
+    }
+}
+@media only screen and (max-width: 350px){
+    #Service h1, #projects h1{
+        font-size: 2.4em;
+    }
+    #Service h1{
+        top: -20px;
+    }
+    #projects h1{
+        top: -80px;
+    }
+}
+@media only screen and (min-width: 711px) and (max-width: 840px){
+    header{
+        padding: 0 0 0 50px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .project-card {
+        height: 200px;
+    }
+    #Service{
+        margin-top: 80px;
+    }
+    #Service h1{
+        left: 10px;
+        top: 0px;
+    }
+    blockquote{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #Service h1, #projects h1{
+        font-size: 25px;
+    }
+    #projects h1{
+        left: 10px;
+        top: -60px;
+    }
+    .card h2{
+        font-size: 2.3em;
+    }
+    .card h3{
+        font-size: 15px;
+    }
+    .card p{
+        font-size: 10px;
+    }
+    .card button{
+        font-size: 10px;
+    }
+    #contact h1{
+        font-size: 25px;
+    }
+    .text-box h1{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+    .text-box p{
+        font-size: 8px;
+        margin-left: 0;
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+    .info blockquote{
+        margin-left: 0;
+        padding-left: 10px;
+    }
+    .text-box .tab-tittle{
+        font-size: 12px;
+        margin: 30px 6px 0 10px;
+    }
+    .info{
+        margin-top: 20px;
+    }
+    .div-2 button{
+        margin-bottom: 60px;
+    }
+}
+@media only screen and (max-width: 361px){
+    .div-2{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #Service h1{
+        font-size: 2.5em;
+        top: -20px;
+    }
+    #projects{
+        height: 100%;
+    }
+    #projects h1{
+        font-size: 2.5em;
+    }
+    #contact h1{
+        font-size: 2.5em;
+    }
+    .div-2{
+        padding-right: 20px;
+    }
+}

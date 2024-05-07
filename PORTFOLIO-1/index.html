@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&family=Vast+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="kotak">
+      <h3 onclick="hideMenu()"><i class="bx bx-x"></i></h3>
+      <ul>
+        <li><a href="#container">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Service">Service</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <header id="container">
+      <nav>
+        <h2><span>M</span>ark.</h2>
+        <ul>
+          <li><a href="#container">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Service">Service</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p onclick="showMenu()"><i class="bx bx-list-ul"></i></p>
+      </nav>
+      <div class="content">
+        <h2><span class="ui">UI</span>/<span class="ux">UX</span> Designer</h2>
+        <h1>Hi, I'am <span>Mark</span> <br />Gene From Singapore</h1>
+      </div>
+    </header>
+    <div class="container-content">
+      <div id="about">
+        <div class="image-box">
+          <img src="image/about.png" alt="" />
+        </div>
+        <div class="text-box">
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            tempore debitis eligendi natus voluptate optio maiores commodi
+            architecto. Veritatis suscipit quidem numquam natus eos in
+            asperiores odio esse qui possimus!
+          </p>
+          <ul>
+            <li class="tab-tittle active-title" onclick="openTab('skills')">
+              Skills
+            </li>
+            <li class="tab-tittle" onclick="openTab('experience')">
+              Experience
+            </li>
+            <li class="tab-tittle" onclick="openTab('education')">Education</li>
+          </ul>
+          <div class="info active-subtitle" id="skills">
+            <blockquote >UI/UX</blockquote>
+            <p >Designer UI/UX for Web</p>
+            <blockquote >Front-end</blockquote>
+            <p >Design Front-end Web</p>
+            <blockquote >Photografer</blockquote>
+            <p>Editing and Taking Photos</p>
+          </div>
+          <div class="info" id="experience">
+            <blockquote >2021</blockquote>
+            <p >Freelanche Design Web</p>
+            <blockquote >2019</blockquote>
+            <p >Training at Company</p>
+            <blockquote >2018</blockquote>
+            <p >Editing Video</p>
+          </div>
+          <div class="info" id="education">
+            <blockquote>2023</blockquote>
+            <p>Harvard University</p>
+            <blockquote >2018</blockquote>
+            <p >Join course Web Development</p>
+            <blockquote >2019</blockquote>
+            <p >SMK TI Grobak</p>
+          </div>
+        </div>
+      </div>
+
+<!-- -------------------------------SERVICE-------------------------------- -->
+
+      <section id="Service">
+        <h1>My Service</h1>
+        <div class="card-container">
+          <div class="card">
+            <h2><i class="bx bx-code-alt"></i></h2>
+            <h3>Front-end Web</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              dolore odit ad quos libero ea.
+            </p>
+            <button>
+              Learn more <img src="image/arrow-white.png" alt="" />
+            </button>
+          </div>
+          <div class="card">
+            <h2><i class="bx bx-camera-movie"></i></h2>
+            <h3>Photografer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              dolore odit ad quos libero ea.
+            </p>
+            <button>
+              Learn more <img src="image/arrow-white.png" alt="" />
+            </button>
+          </div>
+          <div class="card">
+            <h2><i class="bx bx-exclude"></i></h2>
+            <h3>Design UI/UX</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              dolore odit ad quos libero ea.
+            </p>
+            <button>
+              Learn more <img src="image/arrow-white.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+<!-- --------------------------------PROJECTS--------------------------- -->
+
+      <section id="projects">
+        <h1>My Projects</h1>
+        <div class="container-project">
+          <div class="project-card">
+            <img src="image/website.jpg" alt="" />
+            <div class="layer">
+              <h3>Website</h3>
+              <p>
+                Lorem ipsum dolor, sit amet earum adipisicing elit. Corrupti
+                aperiam, quis vitae iusto earum.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="image/camera2.jpg" alt="" />
+            <div class="layer">
+              <h3>Photografer</h3>
+              <p>
+                Lorem ipsum dolor, sit amet earum adipisicing elit. Corrupti
+                aperiam, quis vitae iusto earum.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img src="image/design.jpg" alt="" />
+            <div class="layer">
+              <h3>Designer</h3>
+              <p>
+                Lorem ipsum dolor, sit amet earum adipisicing elit. Corrupti
+                aperiam, quis vitae iusto earum.
+              </p>
+              <a href="#"><i class="bx bx-link-external"></i></a>
+            </div>
+          </div>
+        </div>
+        <button class="more">Show More</button>
+      </section>
+
+<!-- -------------------------------CONTACT--------------------------------- -->
+
+      <div id="contact">
+        <div class="row-content">
+          <div class="div-1">
+            <h1>Contact Me</h1>
+            <p>
+              <span><i class="bx bx-envelope"></i></span>Mark@gmail.com
+            </p>
+            <p>
+              <span><i class="bx bx-phone"></i></span>081256763123
+            </p>
+            <ul>
+              <li><i class="bx bxl-facebook-square"></i></li>
+              <li><i class="bx bxl-twitter"></i></li>
+              <li><i class="bx bxl-linkedin-square"></i></li>
+              <li><i class="bx bxl-instagram"></i></li>
+            </ul>
+            <button>
+              <a href="image/my-cv.pdf" download>Download CV</a>
+              <i class="bx bxs-download"></i>
+            </button>
+          </div>
+          <div class="div-2">
+            <form>
+              <input id="name" type="text" placeholder="Your Name" required />
+              <input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Massage"
+                id="massage"
+                rows="6"
+                placeholder="Your Massage"
+              ></textarea>
+              <span class="alert"></span>
+            </form>
+            <button onclick="sendMsg()">Send <i class="bx bx-send"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="copy">
+        <p>Copyright © Mark. Made with Jesta</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+  <!-- && email.value ==  "/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?: \.[a-zA-Z0-9-]+)*$/" && massage.length > 40 -->
+</html>
